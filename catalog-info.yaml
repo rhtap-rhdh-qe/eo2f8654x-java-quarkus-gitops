@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: eo2f8654x-java-quarkus-gitops
+  description: This is GitOps manifest for eo2f8654x-java-quarkus   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: eo2f8654x-java-quarkus
+    janus-idp.io/tekton: eo2f8654x-java-quarkus
+    backstage.io/kubernetes-id: eo2f8654x-java-quarkus 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:eo2f8654x-java-quarkus

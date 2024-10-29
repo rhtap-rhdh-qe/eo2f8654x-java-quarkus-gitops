@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: eo2f8654x-java-quarkus-gitops-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/eo2f8654x-java-quarkus-gitops
